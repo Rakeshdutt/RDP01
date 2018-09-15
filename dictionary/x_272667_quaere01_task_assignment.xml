@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Task Assignment" max_length="40" name="x_272667_quaere01_task_assignment" type="collection">
+        <element choice="1" label="Activity Type" max_length="40" name="activity_type" reference="sys_user_group" type="choice">
+            <choice>
+                <element label="Activity type 1" sequence="0" value="activity type 1"/>
+                <element label="Activity type  2" sequence="1" value="activity type  2"/>
+                <element label="Activity type 3" sequence="2" value="activity type 3"/>
+            </choice>
+        </element>
+        <element label="Client Due Date" max_length="40" name="client_due_date" type="glide_date"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Estimated Date" max_length="40" name="estimated_date" type="glide_date"/>
+        <element label="Estimated Hours" max_length="40" name="estimated_hours" type="glide_duration"/>
+        <element label="Follower" max_length="32" name="follower" reference="sys_user" type="reference"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element label="Task Description" max_length="3000" name="task_description" type="string"/>
+        <element label="Task Permalink" max_length="1024" name="task_permalink" type="url"/>
+        <element label="Task Title" mandatory="true" max_length="2000" name="task_title" type="string"/>
+        <element label="Date" max_length="40" name="te_date" type="glide_date"/>
+        <element label="TE Description" max_length="5000" name="te_description" type="string"/>
+        <element label="Time Entries" max_length="40" name="time_entries" type="glide_time"/>
+        <element label="Total Time Spent" max_length="40" name="total_time_spent" type="glide_duration"/>
+        <element label="Unbillable?" max_length="40" name="unbillable" type="boolean"/>
+    </element>
+</database>
